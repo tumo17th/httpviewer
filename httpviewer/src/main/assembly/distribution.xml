@@ -5,14 +5,14 @@
 		http://maven.apache.org/xsd/assembly-1.1.2.xsd
 	">
 
-	<id>distribution</id>
+	<id>bin</id>
 	<formats>
 		<format>zip</format>
 	</formats>
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<fileSets>
 		<fileSet>
-			<directory>/bin</directory>
+			<directory>src/main/resources/bin</directory>
 			<outputDirectory>/</outputDirectory>
 		</fileSet>
 		<fileSet>
@@ -20,6 +20,7 @@
 			<outputDirectory>/result</outputDirectory>
 			<excludes>
 				<exclude>**.txt</exclude>
+				<exclude>**.gitkeep</exclude>
 			</excludes>
 		</fileSet>
 		<fileSet>
