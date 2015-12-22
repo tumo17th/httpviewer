@@ -91,7 +91,7 @@ public class HttpViewerImpl implements HttpViewer {
 
         InputStream resStream = getResultStream(urlConn);
         if (resStream == null)
-            return "This response has no HttpBody.";
+            return sb.append("This response has no HttpBody.").toString();
 
         String encoding = config.getEncoding();
         try (BufferedReader br = new BufferedReader(new InputStreamReader(resStream, encoding))) {
