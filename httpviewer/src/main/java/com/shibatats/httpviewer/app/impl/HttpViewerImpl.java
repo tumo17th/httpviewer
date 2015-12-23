@@ -43,7 +43,8 @@ public class HttpViewerImpl implements HttpViewer {
 
             String headerStr = getHeaderStr(urlConn);
             String bodyStr = printBody(urlConn);
-            String content = headerStr + bodyStr;
+            String border = printBorder();
+            String content = headerStr + bodyStr + border;
 
             printer.printToConsole(content);
             if (config.isPrintToFile()) {
@@ -101,6 +102,10 @@ public class HttpViewerImpl implements HttpViewer {
             }
         }
         return sb.toString();
+    }
+
+    private String printBorder() {
+        return LS + "----------------------------" + LS;
     }
 
     private InputStream getResultStream(HttpURLConnection urlConn) throws IOException {
