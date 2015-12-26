@@ -2,7 +2,7 @@
 
 ---
 ###Outline
-Simple Application for viewing Http Header &amp; Contents  
+Simple Application for viewing Http Header &amp; Body  
 
 ###How to use
 1. Run maven:package >> httpviewer-bin.zip is created under target folder.
