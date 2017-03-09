@@ -55,18 +55,9 @@ public class HttpViewerImplWithBasicTemp implements HttpViewer {
             final String encodeAuthorization = Base64.getEncoder().encodeToString(userPassword.getBytes());
             urlConn.setRequestProperty("Authorization", "Basic " + encodeAuthorization);
 
-            urlConn.addRequestProperty("X-mazda-common-header", "{\"RequesterApplicationMessageID\":\"2802568c-2e5d-494b-a628-d1492bf7ff27\",\"RequesterApplicationID\":\"factgroup\",\"CallerApplicationID\":\"factgroup\",\"CallerIP\":\"133.189.219.60\",\"RequesterParty\":\"MC\",\"RequesterUserID\":\"WSS-m901245\"}");
-            // urlConn.setRequestProperty("Authorization", "Basic eTA1MzI4NDpKdTVxbXZCOQ==");
             urlConn.setRequestProperty("User-Agent", "Jersey/2.3.1 (HttpUrlConnection 1.6.0_24)");
-            // urlConn.setRequestProperty("Host", "api.wf.mazda.co.jp");
             // urlConn.setRequestProperty("Accept", "text/html, image/gif, image/jpeg, */*; q=.2");
-            // urlConn.setRequestProperty("VIPRIONLOOPCOUNT", "1");
-            // urlConn.setRequestProperty("ECID-Context", "1.005IY1CYB77Fk3ti4dv1CU0002G0000EbU;kXjE9ZDLIPHCrF9OkPRBqHFBhLPRYLQSnVAPr6QCl9CPaTAPr3CEh4DOq6DBs7EPYT9Dl9CPs4CE^KFOXKRB^LRSoPQRXKTQjUPJ_TQO_IVS");
             // urlConn.setRequestProperty("Connection", "Keep-Alive");
-            // urlConn.setRequestProperty("Proxy-Client-IP", "133.189.219.60");
-            // urlConn.setRequestProperty("X-Forwarded-For", "133.189.219.60");
-            // urlConn.setRequestProperty("X-WebLogic-KeepAliveSecs", "30");
-            // urlConn.setRequestProperty("X-WebLogic-Force-JVMID", "-248232668");
             urlConn.setDoOutput(true);
 
             String url = urlConn.getURL().toString();
