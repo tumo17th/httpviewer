@@ -1,10 +1,10 @@
 # HttpViewer / Httpビューワー
 
 ---
-###Outline
+### Outline
 Simple Application for viewing Http Header &amp; Body  
 
-###How to use
+### How to use
 1. Download httpviewer-bin.zip from [Release 1.0.1](https://github.com/tumo17th/httpviewer/releases)  
   (You can get it from src by runnning maven:package >> httpviewer-bin.zip is created under target folder.)  
 2. Unzip httpviewer-bin.zip.
@@ -14,10 +14,10 @@ Simple Application for viewing Http Header &amp; Body
 
 ---
 
-###概要
+### 概要
 Httpの内容(HeaderとBody)を確認するシンプルなツールです。
 
-###使い方
+### 使い方
 1. httpviewer-bin.zipを[Release 1.0.1](https://github.com/tumo17th/httpviewer/releases)よりダウンロードする。  
   (srcからmaven:packageを実行して取得することも可能 >> targetフォルダにhttpviewer-bin.zipが作成される)  
 2. httpviewer-bin.zipを解凍。
