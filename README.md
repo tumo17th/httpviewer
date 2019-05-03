@@ -1,4 +1,4 @@
-# HttpViewer / Httpビューワー
+# HttpViewer / Http閲覧ツール
 
 ---
 ### Outline
